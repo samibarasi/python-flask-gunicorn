@@ -12,7 +12,7 @@ module.exports = {
             ref: 'origin/main',
             repo: 'git@github.com:samibarasi/python-aws.git',
             path: '/home/ubuntu/python-aws',
-            'post-deploy': 'npm install && pm2 startOrRestart ecosystem.config.js'
+            'post-deploy': 'python3 -m venv venv && pip3 install -r requirements.txt && pm2 startOrRestart ecosystem.config.js'
         }
     }
 }
