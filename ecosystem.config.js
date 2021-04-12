@@ -2,7 +2,7 @@
 module.exports = {
     apps: [{
         name: 'python-aws',
-        script: './server/index.js'
+        script: './server/index.py'
     }],
     deploy: {
         production: {
@@ -12,7 +12,9 @@ module.exports = {
             ref: 'origin/main',
             repo: 'git@github.com:samibarasi/python-aws.git',
             path: '/home/ubuntu/python-aws',
-            'post-deploy': 'python3 -m venv venv && pip3 install -r requirements.txt && pm2 startOrRestart ecosystem.config.js'
+            //'post-deploy': 'python3 -m venv .venv && pip3 install -r requirements.txt && pm2 startOrRestart ecosystem.config.js'
+            'post-deploy': 'PIPENV_VENV_IN_PROJECT=True pipenv install && pm2 startOrRestart ecosystem.config.js'
+            
         }
     }
 }
