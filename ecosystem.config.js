@@ -13,7 +13,7 @@ module.exports = {
             repo: 'git@github.com:samibarasi/python-aws.git',
             path: '/home/ubuntu/python-aws',
             //'post-deploy': 'python3 -m venv .venv && pip3 install -r requirements.txt && pm2 startOrRestart ecosystem.config.js'
-            'post-deploy': 'PIPENV_VENV_IN_PROJECT=True pipenv install && pipenv shell && pm2 startOrRestart ecosystem.config.js'
+            'post-deploy': 'PIPENV_VENV_IN_PROJECT=True pipenv install && source .venv/bin/activate && pm2 startOrRestart ecosystem.config.js'
             
         }
     }
