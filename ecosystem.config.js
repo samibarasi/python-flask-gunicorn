@@ -2,7 +2,7 @@
 module.exports = {
     apps: [{
         name: 'python-aws',
-        script: './server/index.py'
+        script: 'pipenv run python ./server/index.py'
     }],
     deploy: {
         production: {
