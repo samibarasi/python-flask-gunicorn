@@ -1,4 +1,5 @@
 from flask import Flask
+import os
 
 app = Flask(__name__)
 
@@ -6,4 +7,4 @@ app = Flask(__name__)
 def index():
     '''Index page route'''
     
-    return '<h1>Application Deployed!</h1>'
+    return print(os.environ)
