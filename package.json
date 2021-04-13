@@ -1,0 +1,23 @@
+{
+  "name": "python-aws",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.py",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samibarasi/python-aws.git"
+  },
+  "keywords": [
+    "python",
+    "aws"
+  ],
+  "author": "Sami Barasi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samibarasi/python-aws/issues"
+  },
+  "homepage": "https://github.com/samibarasi/python-aws#readme"
+}
