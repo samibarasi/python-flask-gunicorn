@@ -6,4 +6,9 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     '''Index page route'''
-    return render_template("index.html", items=os.environ)
+    return "Application Deployed!"
+
+@app.route('/info')
+def info():
+    '''Info page route'''
+    return render_template("info.html", items=os.environ, headline="Info")
