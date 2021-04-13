@@ -4,6 +4,8 @@
   "description": "",
   "main": "server/index.py",
   "scripts": {
+    "start": "FLASK_APP=server/wsgi.py FLASK_ENV=development flask run --host '0.0.0.0'",
+    "prod": "gunicorn --workers 2 --bind 0.0.0.0:4000 --chdir server wsgi:app",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

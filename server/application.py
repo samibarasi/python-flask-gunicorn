@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     '''Index page route'''
-    return "Application Deployed!"
+    return "<h1>Application Deployed!</h1>"
 
 @app.route('/info')
 def info():
