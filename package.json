@@ -1,12 +1,12 @@
 {
-  "name": "python-aws",
+  "name": "python-flask-gunicorn",
   "version": "1.0.0",
   "description": "",
   "main": "server/index.py",
   "scripts": {
     "start": "FLASK_APP=server/wsgi.py FLASK_ENV=development flask run --host '0.0.0.0'",
     "prod": "gunicorn --workers 2 --bind 0.0.0.0:4000 --chdir server wsgi:app",
-    "deploy": "DEPLOY_BRANCH=origin/gunicorn pm2 deploy ecosystem.config.js production",
+    "deploy": "pm2 deploy ecosystem.config.js production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,7 +15,8 @@
   },
   "keywords": [
     "python",
-    "aws"
+    "flask",
+    "gunicorn"
   ],
   "author": "Sami Barasi",
   "license": "ISC",

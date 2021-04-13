@@ -1,7 +1,7 @@
 
 module.exports = {
     apps: [{
-        name: 'python-aws-gunicorn',
+        name: 'python-flask-gunicorn',
         script: 'npm run prod',
         env: {
             "NODE_ENV": "development",
