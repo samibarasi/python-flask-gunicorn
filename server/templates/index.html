@@ -9,8 +9,8 @@
 <body>
     <h1>{{ headline }}</h1>
     <ul>
-    {% for item in items %}
-        <p>{{ item }}</p>
+    {% for key, value in items.items() %}
+        <p>{{ key }}={{ value }}</p>
     {% endfor %}
     </ul>
 </body>
