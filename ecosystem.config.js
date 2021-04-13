@@ -5,11 +5,13 @@ module.exports = {
         script: 'gunicorn --worker 2 --bind 0.0.0.0:5000 --chdir server wsgi:app',
         env: {
             "PORT": 3000,
-            "NODE_ENV": "development"
+            "NODE_ENV": "development",
+            "DEPLOY_BRANCH": "origin/gunicorn"
         },
         env_production: {
             "PORT": 5000,
             "NODE_ENV": "production",
+            "DEPLOY_BRANCH": "origin/gunicorn"
         }
     }],
     deploy: {
