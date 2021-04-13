@@ -2,7 +2,7 @@
 module.exports = {
     apps: [{
         name: 'python-aws-gunicorn',
-        script: 'gunicorn --workers 2 --bind 0.0.0.0:4000 --chdir server wsgi:app',
+        script: 'npm run prod',
         env: {
             "NODE_ENV": "development",
             "FLASK_ENV": "development",
