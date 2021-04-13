@@ -6,12 +6,13 @@ module.exports = {
         env: {
             "PORT": 3000,
             "NODE_ENV": "development",
-            "DEPLOY_BRANCH": "origin/gunicorn"
+            "FLASK_ENV": "development",
+
         },
         env_production: {
             "PORT": 5000,
             "NODE_ENV": "production",
-            "DEPLOY_BRANCH": "origin/gunicorn"
+            "FLASK_ENV": "production"
         }
     }],
     deploy: {
