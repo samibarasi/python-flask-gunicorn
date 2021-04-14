@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/samibarasi/python-aws.git"
+    "url": "git+https://github.com/samibarasi/python-flask-gunicorn.git"
   },
   "keywords": [
     "python",
@@ -22,9 +22,9 @@
   "author": "Sami Barasi",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/samibarasi/python-aws/issues"
+    "url": "https://github.com/samibarasi/python-flask-gunicorn/issues"
   },
-  "homepage": "https://github.com/samibarasi/python-aws#readme",
+  "homepage": "https://github.com/samibarasi/python-flask-gunicorn#readme",
   "devDependencies": {},
   "dependencies": {
     "pm2": "^4.5.6"
