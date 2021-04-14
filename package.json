@@ -23,5 +23,9 @@
   "bugs": {
     "url": "https://github.com/samibarasi/python-aws/issues"
   },
-  "homepage": "https://github.com/samibarasi/python-aws#readme"
+  "homepage": "https://github.com/samibarasi/python-aws#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "pm2": "^4.5.6"
+  }
 }
