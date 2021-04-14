@@ -21,7 +21,7 @@ module.exports = {
             repo: 'git@github.com:samibarasi/python-flask-gunicorn.git',
             path: '/home/ubuntu/python-flask-gunicorn',
             //'post-deploy': 'python3 -m venv .venv && pip3 install -r requirements.txt && pm2 startOrRestart ecosystem.config.js'
-            'post-deploy': 'PIPENV_VENV_IN_PROJECT=True pipenv install && source .venv/bin/activate && npm install && pm2 startOrRestart ecosystem.config.js'
+            'post-deploy': 'PIPENV_VENV_IN_PROJECT=True pipenv install && source .venv/bin/activate && npm install && pm2 startOrRestart ecosystem.config.js --env production'
             
         }
     }
